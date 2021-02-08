@@ -1,3 +1,7 @@
+:root {
+  --cubik-: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .backdrop {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.2);
@@ -33,23 +37,30 @@
 .exit {
   position: absolute;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 30px;
   height: 30px;
-
-  top: 18px;
-  right: 18px;
+  top: 8px;
+  right: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
   background-color: #ffffff;
 
   cursor: pointer;
-
-  padding: 7px;
 }
 
 .icon-exit {
   width: 11px;
   height: 11px;
   fill: black;
+  transition: fill 250ms var(--cubik-);
+}
+
+.exit:hover .icon-exit,
+.exit:focus .icon-exit {
+  fill: #2196f3;
 }

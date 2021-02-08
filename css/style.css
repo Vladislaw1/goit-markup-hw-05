@@ -90,8 +90,6 @@ header {
   text-decoration: none;
 
   margin-right: 93px;
-  animation-name: animate__heartBeat;
-  animation-duration: 500ms;
 }
 .logo-web {
   color: var(--secondary-color);
