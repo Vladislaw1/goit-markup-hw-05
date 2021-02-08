@@ -54,8 +54,6 @@
 }
 
 .icon-exit {
-  width: 11px;
-  height: 11px;
   fill: black;
   transition: fill 250ms var(--cubik-);
 }
