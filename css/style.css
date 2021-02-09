@@ -571,25 +571,58 @@ header {
 .footer-container-right {
   flex-basis: calc((50% - 45px) / 2);
 }
+.input-email-footer {
+  width: 358px;
+  height: 50px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  padding-left: 15px;
+
+  transition: border 250ms var(--timing-function);
+}
+.input-email-footer:focus {
+  border: 1px solid #188ce8;
+}
+.form-footer {
+  display: flex;
+  margin-top: 20px;
+}
 .footer-button {
-  padding: 10px 32px;
+  display: flex;
+  align-items: center;
+
+  padding: 10px 29px;
   color: #ffffff;
   font-family: var(--font-text-title);
   font-size: 16px;
   font-weight: 700;
-  line-height: 1.8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.06;
 
   background-color: var(--secondary-color);
-  border: 6px solid var(--secondary-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
-  margin-top: 30px;
+  margin-left: 12px;
 
   cursor: pointer;
 
   transition: background-color 250ms var(--timing-function), border 250ms var(--timing-function);
+}
+.footer-button:hover,
+.footer-button:focus {
+  background-color: #188ce8;
+}
+.icon-footer-button {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+.text-button-footer {
+  margin-right: 10px;
 }
 .footer .title-footer {
   font-family: var(--font-text-title);
